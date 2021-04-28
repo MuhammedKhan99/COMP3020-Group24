@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script src="scripts.js"></script>
+  <script src="mock_data/menus.js"></script>
+  <script src="mock_data/restaurant_meta.js"></script>
+  <script src="cart_item.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Order Me Up</title>
+</head>
+
+<body>
+  <div id="landing">
+    <img id="landing_image" src="static/landing_page.jpg">
+    <form id="address_prompt">
+      <input type="text" id="address" placeholder="Enter Your Address"></input>
+      <button id="address_submit" type="button"><i id="address_submit" class="fa fa-search"></i></button>
+    </form>
+  </div>
+
+  <div class="header">
+    <img id="header_image" src="./static/header_background.jpg" />
+  </div>
+  <div id="logo_container">
+    <img id="logo" src="https://i.imgur.com/KymmhdC.png" title="Order Me Up logo">
+    <div id="delivery_address"></div>
+  </div>
+
+  <div class="bar">
+    <form>
+      <input type="text" id="search" onkeyup="searchTags(document.getElementById('search').value)" placeholder="Search">
+      <button type="button" ><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+  
+  <div class="row" id="select_buttons"></div>
+
+  <div class="container">
+    <a id="balloon_buttons"></a>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span id="close" class="close">&times;</span>
+      <div class="modal-data" id="modal_data"></div>
+    </div>
+  </div>
+  <div id="footer">
+    <a id="link" href="https://github.com/MarySukha/COMP3020-Group24" target="_blank">Contact Us</a>
+    <a id="link" href="https://github.com/MarySukha/COMP3020-Group24" target="_blank">Careers</a>
+    <a id="link" href="https://github.com/MarySukha/COMP3020-Group24" target="_blank">FAQ</a>
+    <a id="link" href="https://github.com/MarySukha/COMP3020-Group24" target="_blank">Delivery Policy</a>
+    <img id="footer_logo" src="./static/order_me_up_logo_small.png" />
+  </div>
+</body>
+
+</html>
